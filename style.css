@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    max-height: 100vh;
+}
+.container{
+    padding: 0 auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+position: relative;
+top: 4em;
+left: 10em;
+
+width: 1440px;
+height: 60px;
+
+border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+.list{
+    position: absolute;
+    list-style: none;
+    display: flex;
+ 
+    left:11em;
+    top:  -0.7em;;
+}
+.list li{
+    margin-right: 2.5em
+}
+
+.list li:hover{
+    cursor: pointer;
+    height:54px ;
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+.cart{
+    position: absolute;
+    left: 75em;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.photo{
+    position: absolute;
+    top: -17px;
+    left: 81em;
+  border: none;
+   
+}
+.photo:hover{
+    cursor: pointer;
+    border: 2px solid hsl(26, 100%, 55%) ;
+    border-radius: 50%;
+    margin: -2px;
+}
+.hidden{
+    display: none;
+}
+.cOpen{
+    transition:  300ms;
+    border-radius: 10px;
+    position: absolute;
+    left:70em ;
+    top: 3em;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 5px 20px 0.1px hsl(0, 0%, 0%)
+}
+.cartMsg{
+    position: absolute;
+    padding: 1em;
+    width: 23em;
+    height: 30px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+   
+}
+.empty{
+    position: absolute;
+    top: 6em;
+    left: 3em;
+    
+    color: hsl(220, 14%, 75%);
+}
+.pC{
+    position: absolute;
+    top: 6em;
+    left: 1em;
+    border-radius: 10px;
+}
+.pName{
+    font-size: 18px;
+    position: absolute;
+    top: 5em;
+    left: 7em;
+    color: hsl(219, 9%, 45%);
+}
+.pPrice{
+    font-size: 18px;
+    position: absolute;
+    top: 7em;
+    left: 7em;
+    color: hsl(219, 9%, 45%);
+
+}
+.Pqtd{
+    font-size: 18px;
+    position: absolute;
+    top: 7em;
+    left: 11.5em;
+    color: hsl(219, 9%, 45%);
+}
+.priceT{
+    font-size: 18px;
+    position: absolute;
+    top: 7em;
+    left: 13em;
+    color: hsl(0, 0%, 0%);
+}
+.checkout
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 75px;
+    width: 360px;
+    top: 12em;
+    left: 1em;
+    border: none;
+    border-radius: 15px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-size: 18px;
+}
+.checkout:hover{
+    cursor: pointer;
+    color: black;
+    background-color: hsl(25, 100%, 94%);
+}
+.low{
+    left: 15em;
+    width: 1440px;
+    position: relative;
+    top: 10em;
+}
+.low img{
+    position: absolute;
+    border-radius: 15px;
+    top: 1em;
+    left: 7em;
+}
+.type{
+    position: absolute;
+    top: 03em;
+    left: 45em;
+    text-transform: uppercase;
+    color:hsl(26, 100%, 55%);
+letter-spacing: 2px;
+}
+.title{
+    position: absolute;
+    top: 1em;
+    left: 11.9em;
+    width: 493px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.introduction{
+    position: absolute;
+    top: 13em;
+    left: 37.3em;
+    width: 493px;
+
+    font-weight: 400;
+    color:  hsl(219, 9%, 45%);
+}
+.price{
+    position: absolute;
+    top: 10em;
+    left: 19.9em;
+    width: 493px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.descont{
+    display: flex;
+    position: absolute;
+    top: 18.5em;
+    left: 42em;
+    height: 30px;
+    width: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    color:  hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.oldPrice{
+    position: absolute;
+    top: 20em;
+    left: 33.4em;
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 700;
+    color:  hsl(220, 14%, 75%);
+}
+.qtd{
+    display: flex;
+    position: absolute;
+    top: 41em;
+    left: 52em;
+    width: 150px;
+    background-color: hsl(0, 0%, 90%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.menos{
+    position: absolute;
+    left: 1em;
+}
+.menos:hover{
+    cursor: pointer;
+}
+.mais{
+    position: absolute;
+    right: 1em;
+}
+.mais:hover{
+    cursor: pointer;
+}
+.addCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 52px;
+    width: 250px;
+    top: 0em;
+    left: 15em;
+    border: none;
+    border-radius: 15px;
+    background-color: hsl(26, 100%, 55%);
+   
+}
+.addCart img{
+    position: relative;
+    right: 2em;
+    border-radius: 0px;
+    filter: grayscale() brightness(1000%);
+
+}
+.addCart:hover{
+    cursor:pointer;
+}
+.qtdC{
+    text-align: center;
+    position: absolute;
+    left: 76em;
+    bottom: 2em;
+    background-color:hsl(26, 100%, 55%);
+    width: 20px;
+    height: 20px;
+    border-radius:35% ;
+}
+.required{
+    position: absolute;
+    top: 38.5em;
+    left: 52.5em;
+    color: red;
+}
+.lowImg{
+    position: relative;
+    display: flex;
+    top: 40em;
+    left: 22em;
+}
+.lowImg img{
+    margin-right:15px ;
+    border-radius: 15px;
+}
+.lowImg img:hover{
+    cursor: pointer;
+
+}
+.Large{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    mix-blend-mode: normal;
+}
+
+.Large img{
+    filter: brightness(100%);
+    position: absolute;
+    filter:none
+
+}
+.close{
+    position: absolute;
+    left: 75em;
+    bottom: 4em;
+
+}
+.close:hover{
+    cursor: pointer;
+}
+.darkbo{
+    background-color: hsl(0, 0%, 25%);
+
+}
+.cla{
+    filter: brightness(30%);
+}
+.next{
+    position: absolute;
+    top: 1em;
+    left: 1.2em;
+    border-radius: 50%;
+}
+.next1{
+    position: relative;
+    top: 19em;
+    left: 20.5em;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.previous{
+    position: absolute;
+    top: 1em;
+    left: 1.2em;
+    border-radius: 50%;
+}
+.next2{
+    position: relative;
+    top: 19em;
+    right: 20.5em;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.next2:hover{
+    cursor: pointer;
+}
+.next1:hover{
+    cursor: pointer;
+}
+.lixeira{
+    position: absolute;
+    left: 20em;
+    top: 9em;
+}
+.lixeira:hover{
+    cursor: pointer;
+}

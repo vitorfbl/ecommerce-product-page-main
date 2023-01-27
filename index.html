@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body id="body" class="" >
+  <div class="container ">
+    <div id="topDiv" class="top">
+      <img class="logo" src="/images/logo.svg" alt="logo" width="138" height="20px">
+      <ul class="list">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <p id="qtdC" class="qtdC">0</p>
+      <img id="cartImg" class="cart" src="/images/icon-cart.svg" alt="" width="22" height="20px">
+      <div id="cOpen" class="cOpen hidden ">
+        <p class="cartMsg"><strong>Cart</strong></p>
+        <h2 id="empty" class="empty">Your cart is empty!</h2>
+        <div id="pCart" class="pCart hidden">
+          <img class="pC" src="/images/image-product-1-thumbnail.jpg" alt="" width="100px" height="100px">
+          <p class="pName">Fall Limited Edition Sneakers</p>
+          <img id="lixeira" class="lixeira" src="/images/icon-delete.svg" alt="">
+          <span>
+            <p class="pPrice">$125.00 x</p>
+            <p id="Pqtd" class="Pqtd">0</p>
+            <p id="priceT" class="priceT"><strong>$000.00</strong></p>
+          </span>
+          <button id="checkout" class="checkout"><strong>Checkout</strong> </button>
+        </div>
+      </div>
+      <img class="photo" src="/images/image-avatar.png" alt="" width="50px" height="50px">
+    </div>
+    <div id="lowDiv" class="low" >
+      <img src="/images/image-product-1.jpg" alt="" width="450px" height="450px">
+      <h5 class="type"><strong>Sneaker Company</strong></h5>
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <p class="introduction">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <h2 class="price">$125.00</h2>
+      <h2 class="descont">50%</h2>
+      <h2 class="oldPrice">$250.00</h2>
+
+
+    </div>
+    <div id="qtdDiv" class="qtd">
+      <img class="menos" id="menos" src="/images/icon-minus.svg" alt="">
+      <p id="quantidade">0</p>
+      <img class="mais" id="mais" src="/images/icon-plus.svg" alt="">
+      
+
+      <button id="cart-btn" style="color:white;" class="addCart"><img src="/images/icon-cart.svg" alt=""> <strong>Add to
+          cart</strong> </button>
+    </div>
+    <div id="lowImgDiv" class="lowImg">
+      <img id="img1" src="/images/image-product-1-thumbnail.jpg" alt="" width="100px" height="100px">
+      <img id="img2" src="/images/image-product-2-thumbnail.jpg" alt="" width="100px" height="100px">
+      <img id="img3" src="/images/image-product-3-thumbnail.jpg" alt="" width="100px" height="100px">
+      <img id="img4" src="/images/image-product-4-thumbnail.jpg" alt="" width="100px" height="100px">
+    </div>
+    <div class="Large">
+      <img id="large1" class="hidden" src="/images/image-product-1.jpg" alt="" width="600px" height="600px">
+      <img id="large2" class="hidden" src="/images/image-product-2.jpg" alt="" width="600px" height="600px">
+      <img id="large3" class="hidden" src="/images/image-product-3.jpg" alt="" width="600px" height="600px">
+      <img id="large4" class="hidden" src="/images/image-product-4.jpg" alt="" width="600px" height="600px">
+      
+      <img id="close" class="close hidden"  src="/images/icon-close.svg" alt="" width="30px" height="30px">
+      
+      <span id="n1" class="next1 hidden"><img class ="next" src="/images/icon-next.svg" alt="" width="13px" height="18px"></span>
+      
+      
+      <span id="p1" class="next2 hidden"><img class ="previous" src="/images/icon-previous.svg" alt="" width="13px" height="18px"></span>
+  </div>
+  </div>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.-->
+  </div>
+  
+</body>
+<script src="app.js"></script>
+
+</html>
